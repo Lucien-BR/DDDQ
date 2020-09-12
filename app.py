@@ -5,6 +5,7 @@ import plotly.express as px
 import pandas as pd
 
 class MyApp():
+    # Access :         http://127.0.0.1:8050/
 
     def initApp():
         external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -33,3 +34,5 @@ class MyApp():
                 figure=fig
             )
         ])
+
+        app.run_server(debug=True)
